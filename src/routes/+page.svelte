@@ -1,15 +1,24 @@
-<!-- YOU CAN DELETE EVERYTHING IN THIS PAGE -->
+<script>
+	import { AppShell } from '@skeletonlabs/skeleton';
+	import { AppBar } from '@skeletonlabs/skeleton';
+</script>
 
-<div class="container h-full mx-auto flex justify-center items-center">
-	<div class="space-y-5">
-		<h1 class="h1">Let's get cracking bones!</h1>
-		<p>Start by exploring:</p>
-		<ul>
-			<li><code class="code">/src/routes/+layout.svelte</code> - barebones layout</li>
-			<li><code class="code">/src/app.postcss</code> - app wide css</li>
-			<li>
-				<code class="code">/src/routes/+page.svelte</code> - this page, you can replace the contents
-			</li>
-		</ul>
-	</div>
-</div>
+<AppShell regionPage="relative" slotPageHeader="sticky top-0 z-10">
+	<svelte:fragment slot="header">
+		<AppBar>
+			<h1 class="h1"><span class="gradient-heading">Under construction</span></h1>
+		</AppBar>
+	</svelte:fragment>
+	<slot />
+	<!-- ---- / ---- -->
+	<!-- (pageFooter) -->
+	<!-- <svelte:fragment slot="footer">
+		<a
+			class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+			href="https://github.com/obsqrbtz"
+			target="_blank"
+			rel="noreferrer">
+			GitHub
+		</a>
+	</svelte:fragment> -->
+</AppShell>

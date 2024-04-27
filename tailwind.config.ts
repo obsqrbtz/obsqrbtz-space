@@ -13,7 +13,7 @@ export default {
 			themes: {
 				preset: [
 					{
-						name: 'gold-nouveau',
+						name: 'crimson',
 						enhancements: true,
 					},
 				],

@@ -9,3 +9,12 @@
 	src: url('/fonts/Quicksand.ttf');
 	font-display: swap;
 }
+html, body { @apply h-full overflow-hidden; }
+
+.gradient-heading {
+	@apply bg-clip-text text-transparent box-decoration-clone;
+	/* Direction */
+	@apply bg-gradient-to-br;
+	/* Color Stops */
+	@apply from-blue-500 to-cyan-300;
+}
