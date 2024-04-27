@@ -1,0 +1,21 @@
+
+> obsqrbtz-space@0.0.1 dev
+> vite dev --host
+
+Port 5173 is in use, trying another one...
+
+  VITE v5.2.10  ready in 1359 ms
+
+  ➜  Local:   http://localhost:5174/
+  ➜  Network: http://10.0.0.7:5174/
+9:22:28 PM [vite] ✨ new dependencies optimized: @skeletonlabs/skeleton
+9:22:28 PM [vite] ✨ optimized dependencies changed. reloading
+SvelteKitError: Not found: /sverdle
+    at resolve (/home/user1/obsqrbtz-space/node_modules/@sveltejs/kit/src/runtime/server/respond.js:522:13)
+    at resolve (/home/user1/obsqrbtz-space/node_modules/@sveltejs/kit/src/runtime/server/respond.js:322:5)
+    at #options.hooks.handle (/home/user1/obsqrbtz-space/node_modules/@sveltejs/kit/src/runtime/server/index.js:71:56)
+    at Module.respond (/home/user1/obsqrbtz-space/node_modules/@sveltejs/kit/src/runtime/server/respond.js:319:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  status: 404,
+  text: 'Not Found'
+}
