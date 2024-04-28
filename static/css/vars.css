@@ -1,15 +1,16 @@
 :root {
 	/* Colors */
-	--accent: #E63946;
-	--background: #FAF9F8;
-	--lightAccent: #A8DAE5;
+	--accent: #b44242;
+	--background: #151515;
+	--lightAccent: #222222;
+	--lightAccentShade: #444444;
 	--lighterAccent: #E6E8E4;
-	--dark: #457B9D;
-	--darker: #1D3557;
-	--slate: #2F3948;
+	--dark: #c2c2b0;
+	--darker: #c2c2b0;
+	--slate: #c2c2b0;
 
-	--white: #fff;
-	--black: #152030;
+	--white: #151515;
+	--black: #c2c2b0;
 
 	--ink: var(--slate);
 	--paper: var(--background);

@@ -14,9 +14,4 @@
 			</li>
 		</ul>
 	</nav>
-	<nav>
-		<NavItems />
-	</nav>
-
-	<p>&copy;{new Date().getFullYear()} {siteAuthor}</p>
 </footer>

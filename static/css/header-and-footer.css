@@ -190,8 +190,8 @@ header {
 }
 
 footer {
-	background: var(--darker);
-	color: var(--paper);
+	background: var(--background);
+	color: var(--ink);
 	display: grid;
 	grid-template-columns: 100%;
 	align-items: stretch;
@@ -219,12 +219,6 @@ footer a {
 
 footer nav {
 	display: initial;
-}
-
-@media (min-width: 48rem) {
-	footer nav {
-		border-right: 1px solid var(--dark);
-	}
 }
 
 footer ul {
