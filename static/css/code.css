@@ -7,18 +7,18 @@ code {
 
 pre {
 	overflow-y: auto;
-	color: var(--paper);
-	background: var(--darker);
+	color: var(--primaryFont);
+	background: var(--lightAccent);
 	padding: 1rem;
 	font-size: 0.8rem;
 }
 
 code {
-	color: var(--darker);
+	color: var(--primaryFont);
 	font-size: 1rem;
 	padding: .125em .25em;
 	border-radius: 4px;
-	background: var(--lighterAccent);
+	background: var(--lightAccent);
 	white-space: pre;
 }
 
