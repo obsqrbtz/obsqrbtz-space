@@ -4,7 +4,7 @@ date: "2024-04-28"
 updated: "2024-04-28"
 categories:
   - "linux"
-excerpt: "There's gonna be some dev stuff"
+excerpt: "Making reproducible NixOS configuration"
 ---
 
 ## Preface
