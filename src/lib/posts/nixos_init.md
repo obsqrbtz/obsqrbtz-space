@@ -10,6 +10,7 @@ excerpt: "Making reproducible NixOS configuration"
 ## Preface
 
 As an average Arch enjoyer I've been a bit confused after installing NixOS and not being able to simply install stuff as usual.
+Below are some notes on configuring NixOS in the reproducible manner.
 
 ## Install NixOS
 
