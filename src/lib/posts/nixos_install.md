@@ -80,7 +80,7 @@ Then in `packages.nix` declare the packages, which you would like to have system
 }
 ```
 
-For simplicty, only the essentials are listed here. This list can be modified for your use case, but we'll need home-manager to proceed further. You may see full configuration sample on [GitHub](https://github.com/obsqrbtz/nixdots).
+For simplicty sake, only the essentials are listed here. This list can be modified for your use case, but we'll need home-manager to proceed further. You may see full configuration sample on [GitHub](https://github.com/obsqrbtz/nixdots).
 
 Create a directory `~/nix/nixos/modules` for system-wide modules and create the file `bundle.nix`, which will import everything else in this directory:
 
