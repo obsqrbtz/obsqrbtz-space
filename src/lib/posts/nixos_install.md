@@ -94,6 +94,7 @@ Create a directory `~/nix/nixos/modules` for system-wide modules and create the 
 ```
 
 Imports may vary, depending on your system. I'll include only the essentials there.
+
 _sound.nix_
 
 ```
