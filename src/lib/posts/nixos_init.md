@@ -88,9 +88,48 @@ Create a directory `~/nix/nixos/modules` for system-wide modules and create the 
 {
   imports = [
     ./sound.nix
-    ./env.nix
     ./user.nix
   ];
+}
+```
+
+Imports may vary, depending on your system. I'll include only the essentials there.
+_sound.nix_
+
+```
+{
+  hardware.pulseaudio.enable = false;
+  sound.enable = true;
+
+  security.rtkit.enable = true;
+
+  services.pipewire = {
+    enable = true;
+
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+
+  };
+}
+```
+
+_fish.nix # zsh, bash or whatever shell you use can be confugured there.
+```
+
+{ pkgs, ... }: {
+  programs.fish.enable = true;
+
+  users = {
+    defaultUserShell = pkgs.fish;
+
+    users.dan = {
+      isNormalUser = true;
+      description = "Dan";
+      extraGroups = [ "networkmanager" "wheel" "input" "docker" ];
+      packages = with pkgs; [];
+    };
+  };
 }
 ```
 
