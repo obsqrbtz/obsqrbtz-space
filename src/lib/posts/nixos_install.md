@@ -1,5 +1,5 @@
 ---
-title: "Setting up Nix OS configuration with flakes and home manager"
+title: "Setting up NixOS configuration with flakes and home manager"
 date: "2024-04-28"
 updated: "2024-04-28"
 categories:
