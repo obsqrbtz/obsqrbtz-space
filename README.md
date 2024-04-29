@@ -1,11 +1,14 @@
 # About
 
-C# developer and Linux nerd
+C# developer and Linux nerd.
 
 Tech stack:
 
 - **.NET**
 	- C#
 	- AvaloniaUI
-- **Node.js**
 - **NIX**
+- **Node.js**
+	- Svelte
+- **Docker**
+- and bits of Rust, Python, C++ and Java/Kotlin
