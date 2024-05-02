@@ -59,6 +59,13 @@ li {
 
 	a {
 		display: block;
+		text-decoration: none;
+	}
+	h2{
+		&:hover {
+			color: var(--accent);
+			text-decoration: none;
+		}
 	}
 }
 

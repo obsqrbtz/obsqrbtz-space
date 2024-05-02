@@ -1,110 +1,131 @@
 /**
- * What follows is all syntax highlighting, based on the Dracula theme by Zeno Rocha
+ * Gruvbox dark theme
+ *
+ * Adapted from a theme based on:
+ * Vim Gruvbox dark Theme (https://github.com/morhetz/gruvbox)
+ *
+ * @author Azat S. <to@azat.io>
+ * @version 1.0
  */
 
  code[class*="language-"],
  pre[class*="language-"] {
-	 color: #f8f8f2;
-	 background: none;
-	 text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	 color: #ebdbb2; /* fg1 / fg */
+	 font-family: Consolas, Monaco, "Andale Mono", monospace;
+	 direction: ltr;
 	 text-align: left;
 	 white-space: pre;
 	 word-spacing: normal;
 	 word-break: normal;
-	 word-wrap: normal;
 	 line-height: 1.5;
+ 
 	 -moz-tab-size: 4;
 	 -o-tab-size: 4;
 	 tab-size: 4;
+ 
 	 -webkit-hyphens: none;
 	 -moz-hyphens: none;
 	 -ms-hyphens: none;
 	 hyphens: none;
  }
  
+ pre[class*="language-"]::-moz-selection,
+ pre[class*="language-"] ::-moz-selection,
+ code[class*="language-"]::-moz-selection,
+ code[class*="language-"] ::-moz-selection {
+	 color: #fbf1c7; /* fg0 */
+	 background: #7c6f64; /* bg4 */
+ }
+ 
+ pre[class*="language-"]::selection,
+ pre[class*="language-"] ::selection,
+ code[class*="language-"]::selection,
+ code[class*="language-"] ::selection {
+	 color: #fbf1c7; /* fg0 */
+	 background: #7c6f64; /* bg4 */
+ }
+ 
  /* Code blocks */
  pre[class*="language-"] {
 	 padding: 1em;
-	 margin: 2rem 0;
+	 margin: 0.5em 0;
 	 overflow: auto;
-	 border-radius: 0.3em;
  }
  
  :not(pre) > code[class*="language-"],
  pre[class*="language-"] {
-	 background: #282a36;
+	 background: #1d2021; /* bg0_h */
  }
  
  /* Inline code */
  :not(pre) > code[class*="language-"] {
-	 padding: .1em;
-	 border-radius: .3em;
-	 white-space: normal;
+	 padding: 0.1em;
+	 border-radius: 0.3em;
  }
  
  .token.comment,
  .token.prolog,
- .token.doctype,
  .token.cdata {
-	 color: #6272a4;
+	 color: #a89984; /* fg4 / gray1 */
  }
  
- .token.punctuation {
-	 color: #f8f8f2;
- }
- 
- .namespace {
-	 opacity: .7;
- }
- 
- .token.property,
- .token.tag,
- .token.constant,
- .token.symbol,
- .token.deleted {
-	 color: #ff79c6;
- }
- 
+ .token.delimiter,
  .token.boolean,
- .token.number {
-	 color: #bd93f9;
- }
- 
+ .token.keyword,
  .token.selector,
- .token.attr-name,
- .token.string,
- .token.char,
- .token.builtin,
- .token.inserted {
-	 color: #50fa7b;
+ .token.important,
+ .token.atrule {
+	 color: #fb4934; /* red2 */
  }
  
  .token.operator,
+ .token.punctuation,
+ .token.attr-name {
+	 color: #a89984; /* fg4 / gray1 */
+ }
+ 
+ .token.tag,
+ .token.tag .punctuation,
+ .token.doctype,
+ .token.builtin {
+	 color: #fabd2f; /* yellow2 */
+ }
+ 
  .token.entity,
- .token.url,
- .language-css .token.string,
- .style .token.string,
+ .token.number,
+ .token.symbol {
+	 color: #d3869b; /* purple2 */
+ }
+ 
+ .token.property,
+ .token.constant,
  .token.variable {
-	 color: #f8f8f2;
+	 color: #fb4934; /* red2 */
  }
  
- .token.atrule,
+ .token.string,
+ .token.char {
+	 color: #b8bb26; /* green2 */
+ }
+ 
  .token.attr-value,
- .token.function,
- .token.class-name {
-	 color: #f1fa8c;
+ .token.attr-value .punctuation {
+	 color: #a89984; /* fg4 / gray1 */
  }
  
- .token.keyword {
-	 color: #8be9fd;
+ .token.url {
+	 color: #b8bb26; /* green2 */
+	 text-decoration: underline;
  }
  
- .token.regex,
- .token.important {
-	 color: #ffb86c;
+ .token.function {
+	 color: #fabd2f; /* yellow2 */
  }
  
- .token.important,
+ .token.regex {
+	 background: #b8bb26; /* green2 */
+ }
+ 
  .token.bold {
 	 font-weight: bold;
  }
@@ -113,6 +134,10 @@
 	 font-style: italic;
  }
  
- .token.entity {
-	 cursor: help;
+ .token.inserted {
+	 background: #a89984; /* fg4 / gray1 */
+ }
+ 
+ .token.deleted {
+	 background: #fb4934; /* red2 */
  }

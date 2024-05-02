@@ -1,7 +1,7 @@
 header,
 footer {
 	font-family: var(--primaryFont);
-	padding: 2.5rem 2rem;
+	padding: 2rem 2rem;
 }
 
 :where(header, footer) a {
@@ -31,11 +31,18 @@ footer {
 }
 
 header {
-	background: var(--lightAccent);
+	background: var(--background);
 	color: var(--darker);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+header a{
+	&:hover {
+		color: var(--accent);
+		text-decoration: none;
+	}
 }
 
 @media (min-width: 48rem) {
@@ -112,6 +119,11 @@ header {
 
 .main-nav a {
 	color: inherit;
+
+	&:hover {
+		color: var(--accent);
+		text-decoration: none;
+	}
 }
 
 .main-nav li:nth-of-type(1) {
@@ -176,7 +188,6 @@ header {
 	header .main-nav ul {
 		margin: 1rem auto 0;
 		padding-top: 0.5rem;
-		border-top: 1px solid var(--dark);
 		width: max-content;
 	}
 
@@ -215,6 +226,10 @@ footer p {
 
 footer a {
 	color: inherit;
+	
+	&:hover {
+		text-decoration: none;
+	}
 }
 
 footer nav {

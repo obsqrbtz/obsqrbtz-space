@@ -1,30 +1,30 @@
 @font-face {
-	font-family: "Atkinson Hyperlegible";
-	src: url('/fonts/Atkinson-Hyperlegible-Regular-102a.woff2'), format('woff2');
+	font-family: "Fira Sans";
+	src: url('/fonts/FiraSans-Regular.ttf'), format('ttf');
 	font-display: swap;
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: "Atkinson Hyperlegible";
-	src: url('/fonts/Atkinson-Hyperlegible-Italic-102a.woff2'), format('woff2');
+	font-family: "Fira Sans";
+	src: url('/fonts/FiraSans-Italic.ttf'), format('ttf');
 	font-display: swap;
 	font-weight: normal;
 	font-style: italic;
 }
 
 @font-face {
-	font-family: "Atkinson Hyperlegible";
-	src: url('/fonts/Atkinson-Hyperlegible-Bold-102a.woff2'), format('woff2');
+	font-family: "Fira Sans";
+	src: url('/fonts/FiraSans-Bold.ttf'), format('ttf');
 	font-display: swap;
 	font-weight: bold;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: "Atkinson Hyperlegible";
-	src: url('/fonts/Atkinson-Hyperlegible-BoldItalic-102a.woff2'), format('woff2');
+	font-family: "Fira Sans";
+	src: url('/fonts/FiraSans-BoldItalic.ttf'), format('ttf');
 	font-display: swap;
 	font-weight: bold;
 	font-style: italic;

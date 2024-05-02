@@ -2,28 +2,28 @@ pre,
 code {
 	font-family: var(--codeFont);
 	-webkit-font-smoothing: auto;
-	-moz-osx-font-smoothing: auto;
+	-moz-osx-font-smoothing: auto;	
 }
 
 pre {
 	overflow-y: auto;
-	color: var(--primaryFont);
-	background: var(--lightAccent);
+	color: var(--inlineCodeColor);
+	background: var(--codeBackground);
 	padding: 1rem;
-	font-size: 0.8rem;
+	font-size: 1rem;
 }
 
 code {
-	color: var(--primaryFont);
+	color: var(--inlineCodeColor);
 	font-size: 1rem;
 	padding: .125em .25em;
 	border-radius: 4px;
-	background: var(--lightAccent);
+	background: var(--codeBackground);
 	white-space: pre;
 }
 
 pre code {
 	padding: 0;
 	background: transparent;
-	font-size: 0.8rem;
+	font-size: 1rem;
 }

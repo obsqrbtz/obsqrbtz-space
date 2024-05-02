@@ -47,7 +47,8 @@ Then in `packages.nix` declare the packages, which you would like to have system
 { pkgs, ... }: {
   nixpkgs.config = {
     allowUnfree = true;
-    permittedInsecurePackages = ["python-2.7.18.7" "python-2.7.18.8" "electron-25.9.0"];
+    permittedInsecurePackages = 
+      ["python-2.7.18.7" "python-2.7.18.8" "electron-25.9.0"];
   };
 
   environment.systemPackages = with pkgs; [
@@ -84,7 +85,7 @@ For simplicty sake, only the essentials are listed here. This list can be modifi
 
 Create a directory `~/nix/nixos/modules` for system-wide modules and create the file `bundle.nix`, which will import everything else in this directory:
 
-```
+```nix 
 {
   imports = [
     ./sound.nix
@@ -95,9 +96,9 @@ Create a directory `~/nix/nixos/modules` for system-wide modules and create the 
 
 Imports may vary, depending on your system. I'll include only the essentials there.
 
-_sound.nix_
+`sound.nix`
 
-```
+```nix 
 {
   hardware.pulseaudio.enable = false;
   sound.enable = true;
@@ -115,8 +116,8 @@ _sound.nix_
 }
 ```
 
-_user.nix_
-```
+`user.nix`
+```nix
 { pkgs, ... }: {
   programs.fish.enable = true;
 
@@ -135,7 +136,7 @@ _user.nix_
 
 Then import `bundle.nix` in the `configuration.nix`:
 
-```
+```nix
 imports =
   [ 
     ./hardware-configuration.nix
@@ -149,7 +150,7 @@ When you add any system-wide config for specific packages, create the `.nix` fil
 Create a directory for your user configs. Let it be `~/nix/home-manager`.
 In this directory create a folder for home manager modules `~/nix/home-manager/modules` and the `bundle.nix` with similar content:
 
-```
+```nix
 {
   imports = [
     ./alacritty.nix
@@ -161,7 +162,7 @@ This file should contain imports to user configurations for your apps.
 
 Example app configuration looks like:
 
-```
+```nix
 {config, nixpkgs, ...}:
 {
   programs.alacritty = {
@@ -191,7 +192,7 @@ Example app configuration looks like:
 
 Create the `~/nix/home-manager/home.nix` file:
 
-```
+```nix
 { config, pkgs, inputs, ... }:
 {
   imports = [
@@ -210,7 +211,7 @@ Now it's time to glue everything together.
 
 Create the file `flake.nix` in the `~/nix` directory.
 
-```
+```nix
 {
   description = "Write anything there";
 

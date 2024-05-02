@@ -3,6 +3,7 @@
 	"version": "2.0.2",
 	"scripts": {
 		"dev": "vite dev --host",
+		"dev-local": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
 		"lint": "prettier --ignore-path .gitignore --check -- plugin-search-dir=. . && eslint --ignore-path .gitignore .",

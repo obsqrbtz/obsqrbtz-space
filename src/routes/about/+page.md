@@ -15,4 +15,4 @@ Tech stack:
 - **Node.js**
 	- Svelte
 - **Docker**
-- and bits of Rust, Python, C++ and Java/Kotlin
+- and bits of Rust, C++ and Python

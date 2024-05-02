@@ -1,16 +1,19 @@
 :root {
 	/* Colors */
-	--accent: #b44242;
+	--accent: #fabd2f;
 	--background: #151515;
-	--lightAccent: #222222;
+	--lightAccent: #1d2021;
 	--lightAccentShade: #444444;
 	--lighterAccent: #E6E8E4;
-	--dark: #c2c2b0;
-	--darker: #c2c2b0;
-	--slate: #c2c2b0;
+	--dark: #f4f4f1;
+	--darker: #ddddd5;
+	--slate: #d7d7ce;
+
+	--codeBackground: #1d2021;
+	--inlineCodeColor: #fabd2f;
 
 	--white: #151515;
-	--black: #c2c2b0;
+	--black: #ddddd5;
 
 	--ink: var(--slate);
 	--paper: var(--background);
@@ -19,7 +22,7 @@
 	 * These fonts are broken out into two separate variables from a previous iteration. I left
 	 * it in because it's nice to be able to split out the heading and body fonts.
 	 */
-	--accentFont: 'Atkinson Hyperlegible', Georgia, Times, serif;
-	--primaryFont: 'Atkinson Hyperlegible', sans-serif;
+	--accentFont: 'Fira Sans', Georgia, Times, serif;
+	--primaryFont: 'Fira Sans', sans-serif;
 	--codeFont: 'Fira Code', monospace;
 }

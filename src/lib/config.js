@@ -1,12 +1,10 @@
 /**
- * All of these values are used throughout the site – for example, 
- * in the <meta> tags, in the footer, and in the RSS feed.
- * 
- * PLEASE BE SURE TO UPDATE THEM ALL! Thank you!
+* Built with the SvelteKit Static Blog Starter
+* https://github.com/josh-collinsworth/sveltekit-blog-starter
  **/ 
 
 export const siteTitle = 'Some dev stuff'
-export const siteDescription = 'Built with the SvelteKit Static Blog Starter'
+export const siteDescription = 'Some dev stuff'
 export const siteURL = 'obsqrbtz.space'
 export const siteLink = 'https://obsqrbtz.space'
 export const siteAuthor = 'Daniel Dada'
