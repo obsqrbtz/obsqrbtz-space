@@ -28,6 +28,7 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           echo ${{ secrets.PASSWORD }} | sudo -S systemctl stop website.service
-          cd obsqrbtz-space
+          cd ~/obsqrbtz-space
+          git reset --hard
           git pull
           echo ${{ secrets.PASSWORD }} | sudo -S systemctl start website.service
