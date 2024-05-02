@@ -115,9 +115,8 @@ _sound.nix_
 }
 ```
 
-_fish.nix # zsh, bash or whatever shell you use can be confugured there.
+_user.nix_
 ```
-
 { pkgs, ... }: {
   programs.fish.enable = true;
 
@@ -127,7 +126,7 @@ _fish.nix # zsh, bash or whatever shell you use can be confugured there.
     users.dan = {
       isNormalUser = true;
       description = "Dan";
-      extraGroups = [ "networkmanager" "wheel" "input" "docker" ];
+      extraGroups = [ "networkmanager" "wheel" "input" ];
       packages = with pkgs; [];
     };
   };
@@ -157,6 +156,7 @@ In this directory create a folder for home manager modules `~/nix/home-manager/m
   ];
 }
 ```
+
 This file should contain imports to user configurations for your apps.
 
 Example app configuration looks like:
