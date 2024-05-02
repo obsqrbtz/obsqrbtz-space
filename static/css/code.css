@@ -19,7 +19,7 @@ code {
 	padding: .125em .25em;
 	border-radius: 4px;
 	background: var(--codeBackground);
-	white-space: pre;
+	white-space: pre-wrap;
 }
 
 pre code {

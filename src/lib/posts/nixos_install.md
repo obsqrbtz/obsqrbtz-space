@@ -14,7 +14,7 @@ Below are some notes on configuring NixOS in the reproducible manner.
 
 ## Install NixOS
 
-Well, obviously you need the system up and running to install and configure stuff there. 
+Well, obviously you need the system up and running to install and configure things there. 
 Installation option does not matter, but I'd suggest basic Gnome option to make initial configuration from fully functional environment.
 
 ## Set up config file structure
