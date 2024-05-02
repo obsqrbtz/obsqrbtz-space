@@ -11,5 +11,5 @@
 <h1>Contact</h1>
 
 <p>GitHub - <a rel="external" href="https://github.com/obsqrbtz">https://github.com/obsqrbtz</a></p>
-<p>Mail - <a rel="external" href="mailto:doesdeos@gmail.com">doesdeos@gmail.com</a></p>
+<p>Mail - <a rel="external" href="mailto:doesdeos@gmail.com">dan@obsqrbtz.space</a></p>
 
