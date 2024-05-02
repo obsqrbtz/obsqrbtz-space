@@ -10,7 +10,7 @@
 				<a href="https://github.com/obsqrbtz" data-sveltekit-reload>GitHub</a>
 			</li>
 			<li>
-				<a href="mailto:doesdeos@gmail.com">Mail</a>
+				<a href="mailto:dan@obsqrbtz.space">Email</a>
 			</li>
 		</ul>
 	</nav>
