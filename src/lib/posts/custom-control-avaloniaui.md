@@ -8,7 +8,7 @@ categories:
 excerpt: "Creating custom control with custom graphics"
 ---
 
-In order to draw some custom graphics on a control we can use Skiasharp library, which is bundled with Avalonia as a dependency. First, we need to create a class for our new control. We'll use a snipped from one of the AvaloniaUI devs - [Nikita Tsukanov](https://github.com/kekekeks) ([src](https://github.com/AvaloniaUI/Avalonia/blob/master/samples/RenderDemo/Pages/CustomSkiaPage.cs)).
+In order to draw some custom graphics on a control we can use Skiasharp library, which is bundled with Avalonia as a dependency. First, we need to create a class for our new control. We'll use a snippet from one of the AvaloniaUI devs - [Nikita Tsukanov](https://github.com/kekekeks) ([src](https://github.com/AvaloniaUI/Avalonia/blob/master/samples/RenderDemo/Pages/CustomSkiaPage.cs)).
 
 ```csharp
 namespace MyApp.CustomControls
