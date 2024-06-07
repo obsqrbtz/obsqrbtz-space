@@ -77,7 +77,7 @@ public IEnumerable<int> X
 }
 ```
 
-Now we can bind a property from the ViewModel to the UserControl and render things there. It's time to add actually use the control:
+Now we can bind a property from the ViewModel to the UserControl and render things there. It's time to actually use the control:
 
 Add the reference to our control to the View, which will be using it:
 
