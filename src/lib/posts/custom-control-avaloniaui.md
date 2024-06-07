@@ -23,7 +23,7 @@ namespace MyApp.CustomControls
       public CustomDrawOp(Rect Bounds, GlyphRun noSkia)
       {
 	      _noSkia = noSkia.TryCreateImmutableGlyphRunReference();
-	      Boudns = bounds;
+	      Bounds = bounds;
       }
       
       public void Dispose()
