@@ -51,6 +51,8 @@
 		title={siteTitle}
 		href="http://{siteURL}/api/rss.xml"
 	/>
+	<script defer src="https://dashboard.gloriachurch.ru/script.js" 
+			data-website-id="e999832c-7f1b-406a-94fa-19f0653930f5"></script>
 </svelte:head>
 
 <!--
