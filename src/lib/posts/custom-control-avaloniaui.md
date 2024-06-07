@@ -18,37 +18,37 @@ namespace MyApp.CustomControls
 		class CustomDrawOp :ICustomDrawOperation
 		{
 			private readonly IImmutableGlyphRunReference? _noSkia;
-      private SKCanvas? _canvas;
+      		private SKCanvas? _canvas;
       
-      public CustomDrawOp(Rect Bounds, GlyphRun noSkia)
-      {
-	      _noSkia = noSkia.TryCreateImmutableGlyphRunReference();
-	      Bounds = bounds;
-      }
-      
-      public void Dispose()
-      {
-	      // Dispose whatever were added to control
-      }
-      public Rect Bounds {get; }
-      public bool HitTest (Point p) => true;
-      public bool Equals (ICustomDrawOperation? other) => false;
-      public void Render(ImmediateDrawingContext context)
-      {
-	      var leaseFeature = context.TryGetFeature<ISkiaSharpApiLeaseFeature>();
-	      if (leaseFeature == null)
-	      {
-		      context.DrawGlyphRun(Brush.Parse("#000000").ToImmutable(), _noSkia!);
-		    }
-		    else
-		    {
-			    using var lease = leaseFeature.Lease();
-			    _canvas = lease.SkCanvas;
-			    _canvas.Clear(SKColor.Parse("#00000000"));
-			    // ... draw anything with SkiaSharp on _canvas
-			    _canvas.Restore();
-		    }
-	    }
+			public CustomDrawOp(Rect Bounds, GlyphRun noSkia)
+			{
+				_noSkia = noSkia.TryCreateImmutableGlyphRunReference();
+				Bounds = bounds;
+			}
+			
+			public void Dispose()
+			{
+				// Dispose whatever were added to control
+			}
+			public Rect Bounds {get; }
+			public bool HitTest (Point p) => true;
+			public bool Equals (ICustomDrawOperation? other) => false;
+			public void Render(ImmediateDrawingContext context)
+			{
+				var leaseFeature = context.TryGetFeature<ISkiaSharpApiLeaseFeature>();
+				if (leaseFeature == null)
+				{
+					context.DrawGlyphRun(Brush.Parse("#000000").ToImmutable(), _noSkia!);
+				}
+				else
+				{
+					using var lease = leaseFeature.Lease();
+					_canvas = lease.SkCanvas;
+					_canvas.Clear(SKColor.Parse("#00000000"));
+					// ... draw anything with SkiaSharp on _canvas
+					_canvas.Restore();
+				}
+			}
 		}
 		public override void Render(DrawinngContext context)
 		{
