@@ -27,8 +27,9 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
         script: |
-          echo ${{ secrets.PASSWORD }} | sudo -S systemctl stop website.service
           cd ~/obsqrbtz-space
           git reset --hard
           git pull
-          echo ${{ secrets.PASSWORD }} | sudo -S systemctl start website.service
+          npm run build
+          echo ${{ secrets.PASSWORD }} | sudo rm -rf /var/www/static/obsqrbtz.space/*
+          echo ${{ sectets.PASSWORD }} | sudo cp -r build/* /var/www/static/obsqrbtz.space/
