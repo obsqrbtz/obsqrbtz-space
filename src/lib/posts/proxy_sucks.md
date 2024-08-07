@@ -55,7 +55,7 @@ Fortunately, installing QT is straightforward. Required packages are `qt6-base-d
 
 ## VS Code
 
-That's one more tricky part. First, install `C/C++ Extension Pack (C/C++, CMake, CMake Tools)` extension and add `includePath ` to QT libs in `c_cpp_properties.json` in `.vscode` dir. This path can be obtained this way:
+That's one more tricky. First, install `C/C++ Extension Pack (C/C++, CMake, CMake Tools)` extension and add `includePath ` to QT libs in `c_cpp_properties.json` in `.vscode` dir. This path can be obtained this way:
 
 ```bash
 /usr/lib/qt6/bin/qmake -query QT_INSTALL_HEADERS
