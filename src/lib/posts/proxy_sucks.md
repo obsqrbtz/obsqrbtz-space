@@ -16,7 +16,7 @@ Normally, setting up WSL is as easy as "press the `Next` button untill the `Fini
 
 We need to install the distro somehow. Let's use Ubuntu. Ofc, it won't download normally, so we have to use 'web-download` option:
 
-``powershell
+``bash
 wsl --install Ubuntu-24.04 --web-download
 ``
 
