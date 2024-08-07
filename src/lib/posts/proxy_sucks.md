@@ -16,9 +16,9 @@ Normally, setting up WSL is as easy as "press the `Next` button untill the `Fini
 
 We need to install the distro somehow. Let's use Ubuntu. Ofc, it won't download normally, so we have to use 'web-download` option:
 
-``bash
+```powershell
 wsl --install Ubuntu-24.04 --web-download
-``
+```
 
 Awesome, we got some linux up and running, but there are no network under WSL. Okay, let's fix that:
 
