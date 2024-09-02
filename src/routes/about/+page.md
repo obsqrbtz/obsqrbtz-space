@@ -25,7 +25,7 @@ Mainly working on a C# application and some C++ projects.
 ### Interests
 
 - **Languages:** C#, C++, Rust and Js.
-- **Fields:** Desktop, Web, audio processing.
+- **Fields:** Desktop, web, audio processing.
 
 ## Education
 
