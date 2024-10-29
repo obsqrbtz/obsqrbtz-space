@@ -8,6 +8,7 @@
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
 	import { siteTitle, siteURL } from '$lib/config.js';
+	import "../app.css";
 	export let data;
 
 	const transitionIn = { delay: 150, duration: 150 };
