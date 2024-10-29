@@ -12,7 +12,7 @@ C# developer and Linux nerd.
 
 ## Currently
 
-Mainly working on a C# application and some C++ projects.
+Mainly working on a C# application, some C++ libs and building [ink goose](https://inkgoose.obsqrbtz.space).
 
 ### Specialized in
 
