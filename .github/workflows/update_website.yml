@@ -30,6 +30,7 @@ jobs:
           cd ~/obsqrbtz-space
           git reset --hard
           git pull
+          npm install
           npm run build
           echo ${{ secrets.PASSWORD }} | sudo rm -rf /var/www/static/obsqrbtz.space/*
           echo ${{ secrets.PASSWORD }} | sudo cp -r dist/* /var/www/static/obsqrbtz.space/
