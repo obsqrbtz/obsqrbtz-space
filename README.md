@@ -2,7 +2,5 @@
 
 ```
 npm install
-npm run dev-local
+npm run dev
 ```
-
-View at `http://localhost:5174/`
